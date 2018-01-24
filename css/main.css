@@ -1,0 +1,91 @@
+/*
+Colors :
+http://paletton.com/palette.php?uid=35C0u0kllllaFw0g0qFqFg0w0aF
+*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Roboto+Slab:300,400');
+
+* {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.navigation ul a,
+button a,
+a {
+  text-decoration: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding: 20px;
+  background-color:
+}
+
+.nav-bar-slide {
+  background-color: #540002;
+  height: 180vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-bar-slide a{
+  display: block;
+  border-bottom: #000 solid 2px;
+  text-align: center;
+  padding: 20px 0;
+  color: #FDA8AA;
+  margin: 4px
+}
+
+.nav-bar-slide a:hover,
+.nav-bar-slide a:active {
+  background-color: #7E1518;
+}
+
+.nav-open {
+  color: #FDA8AA;
+  font-size: 2em;
+}
+
+.nav-close {
+  font-size: 2em;
+  position: absolute;
+    top: 0;
+    right: 10px;
+  color: #FDA8AA;
+}
+
+.clearfix::after {
+   content: "";
+    clear: both;
+    display: table;
+}
+
+@media(max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media(min-width: 769px) {
+  .nav-open {
+    display: none;
+  }
+}
