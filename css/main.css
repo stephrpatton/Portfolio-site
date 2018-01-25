@@ -29,7 +29,15 @@ a {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
   line-height: 2;
-  color: #003432;
+  color: #679B99;
+}
+
+section:nth-child(even) .section-container {
+  background-color: #A8383B;
+}
+
+section:nth-child(odd) .section-container {
+  background-color: #226764;
 }
 
 
@@ -47,7 +55,7 @@ a {
 }
 
 .nav-bar-slide {
-  background-color: #540002;
+  background-color: #003432;
   height: 180vh;
   width: 0;
   position: fixed;
@@ -60,10 +68,10 @@ a {
 
 .nav-bar-slide a{
   display: block;
-  border-bottom: #000 solid 2px;
+  border-bottom: #540002 solid 2px;
   text-align: center;
   padding: 20px 0;
-  color: #FDA8AA;
+  color: #41817F;
   margin: 4px
 }
 
@@ -73,37 +81,79 @@ a {
 }
 
 .nav-open {
-  color: #FDA8AA;
-  font-size: 2em;
+  background-color: #003432;
+  color: #679B99;
+  font-size: 2.5em;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
+
 }
 
 .nav-close {
+
   font-size: 2em;
   position: absolute;
     top: 0;
     right: 10px;
-  color: #FDA8AA;
+  color: #679B99;
 }
 
 /*    Hero Section    */
 
 .hero-title {
-
   font-size: 2.5em;
-  padding: 20px;
+  border-bottom: #003432 solid 3px;
 }
+
+.hero-content {
+  font-size: 1.5em;
+  color: #003432;
+}
+
 
 .hero-container {
-  background-color: #226764;
+  width: 70vw;
+  padding: 10px;
+  position: absolute;
+    top: 100px;
+    left: 39px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: inset 0px 0px 20px 2px #679B99;
 }
+
+.hero-section {
+  width: 100vw;
+  height: 98vh;
+  background:
+    linear-gradient(
+      rgba(34, 103, 100, 0.9),
+      rgba(34, 103, 100, 0.8),
+      rgba(34, 103, 100, 0.5)
+  ),
+    url('https://photos-5.dropbox.com/t/2/AAB0vkhAvzSDxgHbcd638oM7__dtuUTgLkj3JqaFPME0Ng/12/36610670/jpeg/32x32/1/_/1/2/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%202018-01-24%20%E5%8D%88%E5%89%8D10%2057%2033.jpeg/ENan7BsYt8MCIAcoBw/c9D3iEfQy7WfzIHhAnFJuxHVNGCoubsxHd6Gpd9lf94?size=1600x1200&size_mode=3') center;
+}
+
+
+.hero-button {
+  background-color: #679B99;
+  box-shadow: inset 0px 0px 20px 2px #226764;
+  padding: 20px 10px;
+  position: absolute;
+  top: 470px;
+  left: 100px;
+}
+
 
 /*    About Section    */
 
-.about-container {
-  background-color: #A8383B;
+.down-arrow {
+  font-size: 10em;
+  color: #226764;
+  position: absolute;
+    top: 530px;
+    left: 131px;
 }
 
 

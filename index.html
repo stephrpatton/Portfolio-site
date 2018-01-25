@@ -41,15 +41,17 @@
   <div id="main-container">
 
     <section class="hero-section">
-      <div class="hero-container">
+      <div class="hero-container section-container">
         <h1 class="section-title hero-title">Stephanie Patton</h1>
+        <h3 class="hero-content">Aspiring Web Developer </h3>
 
       </div>
-
+      <a href="#portfolio" class="hero-button">Check out my Work</a>
     </section>
 
     <section id="about">
-      <div class="about-container">
+      <div class="about-container section-container">
+        <a href="#portfolio"><i class="fas fa-angle-double-down down-arrow"></i></a>
         <h2 class="section-title">About</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nesciunt, recusandae vel sed quibusdam modi delectus eius nostrum ratione fugiat maxime rerum voluptatum perspiciatis minima molestias id quia nobis harum?</p>
 
@@ -63,7 +65,7 @@
 
 
     <section id="portfolio">
-      <div class="portfolio-container">
+      <div class="portfolio-container section-container">
         <h2 class="section-title">Portfolio</h2>
         <!-- Create Porfolio images/ 3 latest projects
 
@@ -76,49 +78,55 @@
       </div>
     </section>
 
-
-    <div class="services-container">
-      <section id="services">
+<section id="services">
+    <div class="services-container section-container">
         <h2 class="section-title">Services</h2>
         <div class="services-section1">
-
         </div>
         <div class="services-section2">
-
         </div>
         <div class="services-section3">
-
         </div>
-
         <button class="services-website">See More</button>
-
+</div>
       </section>
-    </div>
-    <div id="contact">
-      <section class="contact-container">
+
+     <section class="contact-container">
+    <div id="contact" class="section-container">
         <div class="contact-form-section">
           <form action="#" class="contact-form">
+           <h2 class="section-title">Contact Form</h2> <br>
+            <input type="text" input="name" placeholder="Name" required> <br>
+            <input type="tel" input="number" placeholder="Phone Number"> <br>
+            <input type="email" input="email" placeholder="Email Address" required><br>
+            <input type="checkbox" name="service1" value="HTML"> Develop Website from Scratch <br>
+            <input type="checkbox" name="service2" value="PSD"> Develop Website from PSD <br>
+            <input type="checkbox" name="service3" value="Upgrade"> Help upgarde current website <br>
+            <input type="checkbox" name="service4" value="Wordpress"> Develop Wordpress website <br>
+                    <input type="checkbox" name="service5" value="Marketing"> Help market website <br>
+           <textarea name="message" id="message" cols="30" rows="10" placeholder="More Information..."></textarea> <br>
+            <button class="form-button">Submit</button>
+
+
 
           </form>
         </div>
-
         <div class="contact-info-section">
           <p><span>Email:</span>email@email.com</p>
           <a href="">Github</a>
           <a href="">Instagram</a>
           <a href="">Business Website</a>
           <p><a href="#">See my resume</a></p>
-
         </div>
-      </section>
     </div>
-
-    <div class="footer">
+ </section>
+    <section class="footer-section">
+    <div class="footer section-container">
       <p>Copyright | Designed and Coded by Stephanie</p>
     </div>
 
-
-  </div>
+    </section>
+    </div>
   <script type="text/javascript" src="scripts/app.js"></script>
 </body>
 </html>
