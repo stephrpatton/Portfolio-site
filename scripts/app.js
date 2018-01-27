@@ -1,10 +1,8 @@
 //Landing Page
-
-const header = document.querySelector('.header-section');
 const left = document.querySelector('.portfolio-section');
 const right = document.querySelector('.service-section');
 const container = document.querySelector('.container');
-const footer = document.querySelector('.footer-section');
+const button = document.querySelector('.button')
 
 left.addEventListener('mouseenter', () => {
   container.classList.add('hover-left');
@@ -22,21 +20,9 @@ right.addEventListener('mouseleave', () => {
   container.classList.remove('hover-right');
 });
 
-header.addEventListener('mouseenter', () => {
-  container.classList.add('hover-up');
-});
 
-header.addEventListener('mouseleave', () => {
-  container.classList.remove('hover-return');
-});
 
-footer.addEventListener('mouseenter', () => {
-  footer.classList.add('hover-down');
-});
 
-footer.addEventListener('mouseleave', () => {
-  footer.classList.remove('hover-return');
-});
 
 
 // Mobile View Slide out menu
