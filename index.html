@@ -1,4 +1,4 @@
-<!DOCTYPE="html">
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,20 +8,24 @@
   <meta name="keywords" content="web development, psd to html, design, web design, digital marketing, marketing">
   <meta name="author" content="Stephanie Patton">
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main1.css">
   <title>Stephanie Patton | Stepping UP- Development and Marketing</title>
 </head>
-<body>
+<body id="home">
   <header class="clearfix">
 
-    <nav class="navigation float-right">
-      <ul>
+    <nav class="navigation clearfix">
+      <ul class="main-nav-bar">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#blog">Blog</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="nav-social">
+        <li> <a href="#"><i class="fab fa-github"></i></a> </li>
+        <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
+        <li> <a href="#"><i class="fab fa-codepen"></i></a> </li>
       </ul>
     </nav>
     <i class="fas fa-bars nav-open" onclick="openSideMenu()"></i>
@@ -37,27 +41,32 @@
       <a href="#contact">Contact</a>
     </div>
   </header>
-
-  <div id="main-container">
-
     <section class="hero-section">
-      <div class="hero-container section-container">
+      <div class="hero-container">
         <h1 class="section-title hero-title">Stephanie Patton</h1>
         <h3 class="hero-content">Aspiring Web Developer </h3>
+        <a href="#portfolio" class="button hero-button">Portfolio</a>
+        <a href="#about" class="button hero-button">About Me</a>
 
       </div>
-      <a href="#portfolio" class="hero-button">Check out my Work</a>
+
     </section>
+      <div id="main-container">
 
     <section id="about">
-      <div class="about-container section-container">
-        <a href="#portfolio"><i class="fas fa-angle-double-down down-arrow"></i></a>
-        <h2 class="section-title">About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nesciunt, recusandae vel sed quibusdam modi delectus eius nostrum ratione fugiat maxime rerum voluptatum perspiciatis minima molestias id quia nobis harum?</p>
+      <div class="section-container">
 
-        <button class="blog">
-          <a href="">See what's up</a>
-        </button>
+        <div class="profile-pic">
+
+        </div>
+
+        <div class="about-content">
+        <p>Animal lover / World Traveler ~
+        Enjoying the adventures that each day brings. Currently learning about the wonderful world of programming. I am here to help you with your web needs. Want to see what I am up to? Check out here:  </p>
+
+
+        <a href="#" class="button blog-button clearfix">My Blog</a>
+        </div>
       </div>
     </section>
 
@@ -66,28 +75,61 @@
 
     <section id="portfolio">
       <div class="portfolio-container section-container">
-        <h2 class="section-title">Portfolio</h2>
-        <!-- Create Porfolio images/ 3 latest projects
 
-        Also want to include a link to business website to see all my projects-->
+        <div class="portfolio-content">
+        <blockquote>
 
-        <div class="portfolio-section1"></div>
-        <div class="portfolio-section2"></div>
-        <div class="portfolio-section3"></div>
+         <img src="https://images.unsplash.com/photo-1506630525117-569864448381?ixlib=rb-0.3.5&s=f5d3f23aa7b4ded32c75e9ccce81e5b2&auto=format&fit=crop&w=334&q=80" alt="">
+         </blockquote>
+         <cite>Made Using: </cite>
+        </div>
+        <div class="portfolio-content">
+          <blockquote><img src="https://images.unsplash.com/photo-1511973580233-d9e154ce97c8?ixlib=rb-0.3.5&s=51409ca13cd7005092b76342ce51e474&auto=format&fit=crop&w=750&q=80" alt=""></blockquote>
+          <cite>Made Using: </cite>
+        </div>
+        <div class="portfolio-content">
+        <blockquote>
+           <img src="https://images.unsplash.com/photo-1495709276535-bb4928b7b233?ixlib=rb-0.3.5&s=f384785b7869f7e322e9f16b75f29a55&auto=format&fit=crop&w=667&q=80" alt="">
+             </blockquote>
+             <cite>Made Using: </cite>
+        </div>
+        <div class="portfolio-content">
+        <blockquote>
+           <img src="https://images.unsplash.com/photo-1495709276535-bb4928b7b233?ixlib=rb-0.3.5&s=f384785b7869f7e322e9f16b75f29a55&auto=format&fit=crop&w=667&q=80" alt="">
+             </blockquote>
+             <cite>Made Using: </cite>
+        </div>
+        <div class="portfolio-content">
+        <blockquote>
+           <img src="https://images.unsplash.com/photo-1495709276535-bb4928b7b233?ixlib=rb-0.3.5&s=f384785b7869f7e322e9f16b75f29a55&auto=format&fit=crop&w=667&q=80" alt="">
+             </blockquote>
+             <cite>Made Using: </cite>
+        </div>
+        <div class="portfolio-content">
+        <blockquote>
+           <img src="https://images.unsplash.com/photo-1495709276535-bb4928b7b233?ixlib=rb-0.3.5&s=f384785b7869f7e322e9f16b75f29a55&auto=format&fit=crop&w=667&q=80" alt="">
+             </blockquote>
+             <cite>Made Using: </cite>
+        </div>
 
       </div>
     </section>
 
 <section id="services">
     <div class="services-container section-container">
-        <h2 class="section-title">Services</h2>
-        <div class="services-section1">
+        <div class="services-content">
+          <i class="fas fa-code services-icon"></i>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid illum voluptatem doloribus neque, itaque corporis, qui quae saepe deserunt quidem pariatur, sint aperiam. Repellendus quas in nobis hic reiciendis, quae debitis eligendi consequatur tempora. At culpa sit ab. Excepturi?
         </div>
-        <div class="services-section2">
+        <div class="services-content">
+            <i class="fas fa-laptop services-icon"></i>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti et nostrum cum labore iste consectetur repellendus, velit officiis illum soluta nesciunt sapiente perspiciatis perferendis quaerat nemo tempora aut qui dolorem!
         </div>
-        <div class="services-section3">
+        <div class="services-content">
+          <i class="fas fa-filter services-icon"></i>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit modi perspiciatis obcaecati deleniti a! Soluta incidunt, fugit sint reprehenderit nisi tempora, odio blanditiis hic nam consectetur doloribus sit vel eius?
         </div>
-        <button class="services-website">See More</button>
+        <a href="" class="button services-button">Hire Me</a>
 </div>
       </section>
 
@@ -111,6 +153,10 @@
 
           </form>
         </div>
+        </div>
+        </section>
+        </div>
+<footer class="footer-section">
         <div class="contact-info-section">
           <p><span>Email:</span>email@email.com</p>
           <a href="">Github</a>
@@ -118,15 +164,16 @@
           <a href="">Business Website</a>
           <p><a href="#">See my resume</a></p>
         </div>
-    </div>
- </section>
-    <section class="footer-section">
-    <div class="footer section-container">
+
+
+
+
+    <div class="footer-section footer-bottom">
       <p>Copyright | Designed and Coded by Stephanie</p>
     </div>
 
-    </section>
-    </div>
+  </footer>
+
   <script type="text/javascript" src="scripts/app.js"></script>
 </body>
 </html>

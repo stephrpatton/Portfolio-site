@@ -1,0 +1,272 @@
+/*
+Colors :
+http://paletton.com/palette.php?uid=35C0u0kllllaFw0g0qFqFg0w0aF
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Roboto+Slab:300,400');
+
+/* --------------------------------- */
+/* Globel Styles */
+/* --------------------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roberto Slab', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: #ececed;
+}
+
+/* ------ Containers ----------------*/
+
+#main-container {
+  margin: 2% 5% 0 25%;
+  width: 70%;
+}
+
+.section-container {
+  height: 90vh;
+}
+
+
+/* ------ Buttons ----------------*/
+
+.button:link,
+.button:visited {
+  text-decoration: none;
+  color: #FFF;
+  border: 0.1875rem solid #A8383B;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.625rem;
+}
+
+.hero-button:link,
+.hero-button:visited {
+  text-decoration: none;
+  color: #FFF;
+  border: 0.1875rem solid #A8383B;
+  border-radius: 1.5rem;
+  margin-top: 0.625rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-button:first-of-type {
+  margin-right: 2.5rem;
+  background-color: #A8383B;
+}
+
+.button:hover,
+.button:active {
+  background-color: #540002;
+  border: 0.1875rem solid #540002;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.blog-button {
+  margin-top: 2em;
+}
+
+/* ------ Links ----------------*/
+
+
+.blog-button {
+  margin: 2em 0 0 2em;
+}
+
+/* ------ Icons ----------------*/
+
+.services-icon {
+  display: block;
+  margin: 0 auto;
+  color: #540002;
+  font-size: 2.3em;
+}
+
+/* --------------------------------- */
+/* Heading */
+/* --------------------------------- */
+
+header {
+  position: relative;
+}
+
+/* ------ Navigation ----------------*/
+
+
+.nav-bar-slide,
+.nav-open,
+.nav-close {
+  display: none;
+}
+
+.navigation {
+  position: fixed;
+  background-color: rgba(168, 56, 59, 0.9);
+  width: 20%;
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.main-nav-bar li{
+  padding: 10% 0;
+  text-align: center;
+  margin-top: 1.875rem;
+  border-bottom: 0.1875rem solid #540002;
+}
+
+.main-nav-bar li a,
+.nav-social li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav-social {
+
+}
+
+.nav-social li {
+  float: left;
+  list-style: none;
+  margin: 0 .7rem 0;
+  text-align: center;
+  padding: .5rem;
+}
+
+/* ------ Hero ----------------*/
+
+
+.hero-section {
+  height: 100vh;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../images/DSC00957.JPG');
+    background-position: left;
+    background-repeat:
+    no-repeat;
+    background-size: cover;
+    font-size: 1.5em;
+    font-family: 'Fira Sans';
+}
+
+.hero-container {
+  text-align: center;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20% 0;
+  margin: auto;
+  width: 35%;
+}
+
+.hero-title,
+.hero-content,
+.hero-button {
+  padding-bottom: 5%;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.hero-content {
+  margin-bottom: 20px;
+  border-bottom: 3px solid #540002;
+}
+
+/* --------------------------------- */
+/* About Section */
+/* --------------------------------- */
+
+.profile-pic {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/profile-pic.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  width: 65%;
+  height: 100%;
+}
+
+.about-content {
+  float: right;
+  color: #FFF;
+  width: 35%;
+  margin: 0;
+  padding: 2rem 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100%;
+}
+
+/* .about-content p {
+  padding: 15% 16% 0;
+}
+
+.about-content p:last-child {
+  margin-bottom: 10%;
+} */
+
+/* --------------------------------- */
+/* Portfolio Section */
+/* --------------------------------- */
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 105vh;
+}
+
+.portfolio-content img{
+  width: 250px;
+  height: 250px;
+  margin-right: 10px;
+  margin-top: 60px;
+  margin: 60px 10px 0 0;
+}
+
+/* --------------------------------- */
+/* Services Section */
+/* --------------------------------- */
+
+.services-container {
+
+    margin-top: 10px;
+}
+
+.services-content {
+  padding: 5%;
+}
+
+
+
+
+
+/* --------------------------------- */
+/* Footer */
+/* --------------------------------- */
+
+/* .footer-section {
+  height: 30vh;
+
+} */
+
+/* ------ Contact ----------------*/
+
+/* .contact-info-section {
+  margin-top: 10%;
+} */
+
+
+/* ------ Clearfix ----------------*/
+
+.clearfix {
+  clear: both;
+  content: "";
+  display: table;
+}
