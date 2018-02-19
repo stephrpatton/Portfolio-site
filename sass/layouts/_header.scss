@@ -1,0 +1,41 @@
+.main-container {
+  background-image:
+   linear-gradient(
+   to right bottom,
+   rgba($color-dark-red, 0.3),
+    rgba( $color-medium-red, 0.3)),
+     url("../../images/hero.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: $color-white;
+  clip-path: polygon(100% 0, 100% 69%, 49% 96%, 0 68%, 0 0);
+  overflow-x: hidden;
+  margin: 0 3rem;
+}
+
+
+.hero__container {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 6rem;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  line-height: 3;
+  text-shadow: 7px 11px 9px rgba($color-black, 1);
+
+}
+
+.about__content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem;
+  line-height: 2;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  width: 50%;
+  background-color: rgba($color-main-red, 0.6);
+
+  }
