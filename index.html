@@ -8,99 +8,143 @@
   <meta name="keywords" content="web development, psd to html, design, web design, digital marketing, marketing">
   <meta name="author" content="Stephanie Patton">
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Roboto+Slab:300,400">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Roboto+Slab:300,400"> -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>Stephanie Patton | Stepping UP- Development and Marketing</title>
 </head>
-<body id="home">
-    <div class="main-container">
+<body>
+ 
   <header>
-
-    <nav class="navigation">
-      <ul class="navigation__main">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+    
+    <nav>
+      <ul class="nav-bar">
+        <li>
+          <a href="" class="nav-bar__item">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-bar__item">About</a>
+        </li>
+        <li>
+          <a href="" class="nav-bar__item">Projects</a>
+        </li>
+        <li>
+          <a href="" class="nav-bar__item">Blog</a>
+        </li>
+        <li>
+          <a href="" class="nav-bar__item">Contact</a>
+        </li>
       </ul>
-    <!--   <ul class="navigation__main--social">
-      <li> <a href="#"><i class="fab fa-github"></i></a> </li>
-      <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
-      <li> <a href="#"><i class="fab fa-codepen"></i></a> </li>
-    </ul> -->
     </nav>
-  <!--   <i class="fas fa-bars nav-open" onclick="openSideMenu()"></i>
+  
+    <div class="heading">
 
-  <div class="nav-bar-slide"  id="nav-bar">
-
-    <i class="fas fa-times nav-close" onclick="closeSideMenu()"></i>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#blog">Blog</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </div> -->
-  </header>
-    <section class="hero">
-      <div class="hero__container">
-        <h1 class="hero__title">Stephanie Patton</h1>
-        <h3 class="hero__content">Aspiring Web Developer </h3>
-
+      <h1 class="heading__title">
+        Stephanie Patton
+      </h1>
+      
+      <h2 class="heading__text">
+        Freelance Web Developer
+      </h2>
+      <div class="btn-section">
+      <a href="#" class="btn btn--dark btn--hire">Hire Me</a>
       </div>
+    
+    <div class="social">
+      <ul class="social__links">
+<li>
+  <a href="" class="social__links--item">
+    <i class="fab fa-github-square"></i>
+  </a>
+</li>
+<li>
+  <a href="" class="social__links--item">
+    <i class="fab fa-codepen"></i>
+  </a>
+</li>
+<li>
+  <a href="" class="social__links--item">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</li>
+<li>
+  <a href="" class="social__links--item">
+    <i class="fab fa-instagram"></i>
+  </a>
+</li>
+      </ul>
+      </div>
+    </div>
+  </header>
+<main>
+<section class="about-section section" id="about">
+      <div class="about__left">
+        <h3 class="about__title section__title">
+          Book Lover <span class="color--primary">/</span>Code Writer
+        </h3>
+      
+      <p class="about__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, perspiciatis placeat. Iure libero illo commodi repellendus
+        laudantium blanditiis inventore reiciendis, at non excepturi dolorum itaque, eaque molestiae quisquam possimus amet.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, natus? Laborum velit inventore, nam quam minus perferendis. Nam, enim officiis.
+      </p>
+      <p class="about__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, perspiciatis placeat. Iure libero illo commodi repellendus
+        laudantium blanditiis inventore reiciendis, at non excepturi dolorum itaque, eaque molestiae quisquam possimus amet.
+      </p>
+<a href="#" class="btn btn--blog btn--light">My Blog</a>
+    </div>
 
-    </section>
+<div class="about__right">
+<div class="about__right__pictures">
+  <img src="images/profile-pic1.jpg" alt="Stephanie's with an owl" class="about__pic pic--1">
+<img src="images/profile-photo.jpg" alt="Stephanie's profile picture" class="about__pic pic--2">
+<img src="images/profile-pic2.jpg" alt="Stephanie's profile picture" class="about__pic pic--3">
+</div>
+</div>
 
+</section>
+
+<div class="contact-section section">
+   
+  <div class="contact__form">
+      <h4 class="contact__title">
+          Reach out!
+        </h4>
+    <input type="text" class="name" placeholder="Name">
+    <input type="text" class="email" placeholder="Email">
+    <input type="text" class="phone" placeholder="Phone Number">
+    <textarea name="message" id="" class="contact__text" placeholder="Your Message"></textarea>
+    <a href="#" class="btn btn--dark btn--form">Submit</a>
+  </div>
+  <div class="contact__resume">
+    <h4 class="contact__title"> My Resume</h4>
+    <div class="resume-dl">
+    <a href="#" class="btn btn--resume">Resume</a>
+    </div>
+  </div>
+</div>
+<section class="portfolio-section">
+  <h3 class="section__title">
+    My Work So Far
+  </h3>
+<div class="project-box">
+  <div class="project project-1">
+    1
   </div>
 
-  <section id="about">
+  <div class=" project project-2">
+    2
+  </div>
 
-    <div class="about-container">
-
-      <div class="about__content">
-        <h4 class="about__content--heading">About Me</h4>
-      <p class="about__content--sub">Animal lover / World Traveler ~
-      Enjoying the adventures that each day brings. Currently learning about the wonderful world of programming. I am here to help you with your web needs. Want to see what I am up to? Check out here:  </p>
-
-
-      <a href="#" class="btn btn--shape">My Blog</a>
-      </div>
-
-    </div>
-  </section>
-
-
-    <section id="portfolio">
-      <div class="portfolio-container">
-1
+  <div class="project project-3">
+    3
+  </div>
 </div>
-      <div class="portfolio-container">
-2
-</div>
-      <div class="portfolio-container">
-3
-</div>
+</section>
 
-    </section>
-<footer class="footer-section">
-        <div class="contact-info-section">
-          <p><span>Email:</span>email@email.com</p>
-          <a href="">Github</a>
-          <a href="">Instagram</a>
-          <a href="">Business Website</a>
-          <p><a href="#">See my resume</a></p>
-        </div>
-
-
-
-
-    <div class="footer-section footer-bottom">
-      <p>Copyright | Designed and Coded by Stephanie</p>
-    </div>
-
-  </footer>
-
+</main>
   <script type="text/javascript" src="scripts/app.js"></script>
 </body>
 </html>
