@@ -261,18 +261,18 @@ a.btn--blog {
     right: 1rem;
 }
 
-.contact-section {
+.portfolio-section {
     padding: 5rem 0;
     background-image: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
     /* box-shadow: 5rem 5rem 4rem #000; */
     color: #FFF;
     position: relative;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    /* justify-content: space-around; */
 }
 
-.contact-section::before,
-.contact-section::after {
+.portfolio-section::before,
+.portfolio-section::after {
     content: "";
     position: absolute;
     width: 10%;
@@ -286,17 +286,17 @@ a.btn--blog {
     border-left: 15px solid transparent; */
 }
 
-.contact-section::before {
+/* .portfolio-section::before {
     left: 10rem;
     transform: skew(0, -20deg);
     background-color: #FFF6F3;
 }
 
-.contact-section::after {
+.portfolio-section::after {
     left: 1.2rem;
     transform: skew(0, 20deg);
     background-color: #FFF6F3;
-}
+} */
 
 .contact__form {
     /* width: 70%; */
@@ -341,30 +341,41 @@ textarea {
 .portfolio-section::after {
     content: "";
     position: absolute;
-    width: 10%;
-    height: 28%;
-    top: -29%;
+    width: 16.2%;
+    height: 27%;
+    top: 1%;
     z-index: -10;
 }
 
 .portfolio-section:before {
-    right: 20%;
+    left: 15.2%;
      transform: skew(0, 20deg);
-     /* background-color: #98337e; */
-     background-color: #c30759;
+     background-color: #d21c1c;
 }
 
 .portfolio-section::after {
-    right: 10%;
+    left: -1%;
      transform: skew(0, -20deg);
-    background-color: #c30759;
+    background-color: #d21c1c;
 }
 
-.project-box {
-    display: flex;
-    margin-top: 2rem;
-}
 
 .project {
-    margin-right: 2rem;
+    position: absolute;
+    top: 100%;
+    /* height: 50%; */
+    width: 70%; 
+}
+
+.project:nth-last-of-type(2) {
+    left: 30%;
+}
+
+.project:nth-last-of-type(3) {
+    left: 60%;
+}
+
+.project__image{
+    /* /* height: 30%; */
+    width: 50%; 
 }
