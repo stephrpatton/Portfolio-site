@@ -1,11 +1,11 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var cleanCSS = require('gulp-clean-css');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-var watch = require('gulp-watch');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let cleanCSS = require('gulp-clean-css');
+let sourcemaps = require('gulp-sourcemaps');
+let autoprefixer = require('gulp-autoprefixer');
+let watch = require('gulp-watch');
+let browserSync = require('browser-sync');
+let reload = browserSync.reload;
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')

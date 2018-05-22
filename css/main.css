@@ -25,11 +25,17 @@ body {
 
 
 header {
-   background-image: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859, #c30759);
+   background-image: linear-gradient(to right bottom, rgba(210, 28, 28, 0.7), rgba(209, 0, 62, 0.7), rgba(195, 8, 89, 0.8), rgba(195, 7, 89, 0.9)), url('https://images.pexels.com/photos/48207/sunset-sky-sun-cloud-48207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     height: 90vh;
     position: relative;
+    background-size: cover;
+    background-size: 100%;
+    background-position: center
+    background-repeat: no-repeat;
     color: #FFF;
     letter-spacing: .2rem;
+    box-shadow: 0 0 4rem #000;
+
     /*   width: 90vw;
   margin: 0 auto; */
     /*   clip-path: polygon(0 0, 100% 0, 100% 100%, 91% 82%, 80% 100%, -20% 100%); */
@@ -102,7 +108,7 @@ a.btn--blog {
      font-weight: 700;
 }
 
-.btn--blog:hover {
+.btn--light:hover {
      background-image: linear-gradient(#98337e, #b0216e);
      box-shadow: 0 5px 20px 2px #000;
      border-radius: 10px;
@@ -184,16 +190,6 @@ a.btn--blog {
 }
 
 
-/* .profile__box img{
-    border: 2rem solid rgba(53, 50, 127, .2);
-}
-
-.profile__box img:hover {
-
-} */
-
-
-
 .about__text {
     margin-left: 5rem;
     line-height: 2;
@@ -207,11 +203,14 @@ a.btn--blog {
 
 .section__title {
     margin-left: 2rem;
-    font-size: 2rem;
     background-image: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
     display: inline-block;
     -webkit-background-clip: text;
     font-weight: 700;
+}
+
+.about__title {
+    font-size: 2rem;
 }
 
 .about__left {
@@ -262,93 +261,58 @@ a.btn--blog {
 }
 
 .portfolio-section {
-    padding: 5rem 0;
-    background-image: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
-    /* box-shadow: 5rem 5rem 4rem #000; */
-    color: #FFF;
     position: relative;
-    /* display: flex; */
-    /* justify-content: space-around; */
 }
 
-.portfolio-section::before,
-.portfolio-section::after {
+.portfolio__title {
+    padding: 5rem 4rem;
+    background: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
+    box-shadow: 0 0 4rem #000;
+    color: #FFF;
+    position: relative;
+    text-align: center;
+}
+
+.portfolio__title, .services__title {
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+}
+
+
+.portfolio__title::before,
+.portfolio__title::after {
     content: "";
     position: absolute;
     width: 10%;
-    height: 11%;
-    /* z-index: -10; */
-    top: -3rem;
-
-    /* border-top: 15px solid #FFF6F3;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid transparent; */
+    height: 18%;
+    bottom: 0;
+    z-index: -111
 }
 
-/* .portfolio-section::before {
-    left: 10rem;
-    transform: skew(0, -20deg);
-    background-color: #FFF6F3;
-}
-
-.portfolio-section::after {
-    left: 1.2rem;
+.portfolio__title::after {
+    background-color: #c30859;
+    right: 15.1%;
     transform: skew(0, 20deg);
-    background-color: #FFF6F3;
-} */
-
-.contact__form {
-    /* width: 70%; */
-    margin-left: 5rem;
 }
 
-input[type="text"],
-textarea {
-    display: block;
-    width: 150%;
-    padding: .5rem;
-    margin-bottom: .7rem;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    background: white;
-    color: black;
+.portfolio__title::before {
+    background-color: #c30859;
+    right: 5.2%;
+    transform: skew(0, -20deg);
 }
-
-
-.contact__title {
-    font-size: 200%;
-    margin-bottom: 1rem;
-    /* margin-left: 4rem; */
-}
-
-
-
-.resume-dl {
-    background: white;
-    height: 70%;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.portfolio-section {
-    position: relative;
-}
-
 
 .portfolio-section::before,
 .portfolio-section::after {
     content: "";
     position: absolute;
     width: 16.2%;
-    height: 27%;
+    height: 5%;
     top: 1%;
     z-index: -10;
 }
 
 .portfolio-section:before {
-    left: 15.2%;
+    left: 15.1%;
      transform: skew(0, 20deg);
      background-color: #d21c1c;
 }
@@ -361,21 +325,114 @@ textarea {
 
 
 .project {
-    position: absolute;
-    top: 100%;
-    /* height: 50%; */
-    width: 70%; 
+    background-color: #c30859;
+    height: 60vh;
+    width: 30vw;
 }
 
-.project:nth-last-of-type(2) {
-    left: 30%;
+/* Grid Layout */
+
+.portfolio__projects {
+    display: grid;
+    
+    grid-template-columns: 1rem 1fr 2fr 1fr 2fr 1rem;
+    grid-template-rows: 100px repeat(2, 2fr);
+    grid-gap: 2rem;
 }
 
-.project:nth-last-of-type(3) {
-    left: 60%;
+.project-1 {
+    grid-column: 2/3;
+    grid-row: 2/3
 }
 
-.project__image{
-    /* /* height: 30%; */
-    width: 50%; 
+.project__description--1 {
+    grid-column: 3/4;
+    grid-row: 2/3
+
+}
+
+.project-2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.project__description--2 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.project-3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.project__description--3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.project-4 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.project__description--4 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+.service-section {
+    padding: 5rem 0;
+    background: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
+    margin-top: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.services {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    /* width: 80%; */
+    margin: 0 auto;
+}
+
+.service {
+    box-shadow: 0 0 0 .5rem #c30859,
+                0 0 0 .7rem #FFF6F3,
+                0 0 0 1rem #c30859;
+    padding: 2rem;
+    margin: 3rem 2rem;
+    border-radius: 10px;
+}
+
+.contact-section {
+    text-align: center;
+    position: relative;
+    margin: 5rem 0;
+}
+
+.contact__title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input, select, label, textarea {
+    display: block;
+    width: 80%;
+    text-align: left;
+}
+
+footer {
+    background-image: linear-gradient(to right bottom, rgba(210, 28, 28, 0.5), rgba(209, 0, 62, 0.5), rgba(195, 8, 89, 0.8), rgba(195, 7, 89, 0.9)), url('https://images.pexels.com/photos/48207/sunset-sky-sun-cloud-48207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    color: #fff;
 }
