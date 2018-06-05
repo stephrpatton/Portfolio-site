@@ -330,12 +330,45 @@ a.btn--blog {
     width: 30vw;
 }
 
+.project__description {
+    position: relative;
+    transform: translateX(-13.6rem)
+    
+}
+
+.project__description::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    /* z-index: -111; */
+    border: 2em solid transparent;
+}
+
+.project__description::after {
+    content: "\f067";
+    position: absolute;
+    top: 1.5rem;
+    right: -1rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fff;
+}
+
+.project__description::before {
+    right: -35%;
+     /* transform: skew(-60deg, 20deg); */
+     border-left-color: #d21c1c;
+}
+
+
 /* Grid Layout */
 
 .portfolio__projects {
     display: grid;
     
-    grid-template-columns: 1rem 1fr 2fr 1fr 2fr 1rem;
+    grid-template-columns: 1rem 1fr 1fr 1fr 1fr 1rem;
     grid-template-rows: 100px repeat(2, 2fr);
     grid-gap: 2rem;
 }
