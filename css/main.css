@@ -1,5 +1,9 @@
 @import "../vendor/css/sanitize.css";
 
+/* --------------------------------- */
+/* Global Styles  */
+/* --------------------------------- */
+
 h1,
 h2,
 h3,
@@ -26,6 +30,8 @@ body {
   line-height: 1.2;
   font-family: "Merriweather", serif;
 }
+
+/* ------ Headings ----------------*/
 
 header {
   background-image: linear-gradient(
@@ -68,6 +74,29 @@ header::after {
   transform: skew(0, -20deg);
   background-color: #c30759;
 }
+
+
+.heading__title {
+  text-shadow: 3px 2px 20px#000;
+}
+
+.heading__text {
+  text-shadow: 1px 2px 20px #000;
+}
+
+.heading {
+  /* margin-left: 1rem; */
+  margin-top: 10rem;
+  padding: rem;
+  /* width: 40vw; */
+  text-transform: uppercase;
+  /* box-shadow : 10px 9px 50px 20px rgba(53, 50, 127, .3); */
+  text-align: center;
+  padding: 1em;
+  /* transform: translateY(2rem); */
+}
+
+/* ------ Buttons ----------------*/
 
 .btn,
 .btn:visited,
@@ -120,6 +149,21 @@ a.btn--blog {
   color: #fff;
   font-weight: 400;
 }
+
+.btn-section {
+  position: relative;
+  border-bottom: #fff 2px solid;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.heading__title,
+.heading__text,
+.btn--hire {
+  margin-bottom: 2rem;
+}
+
+/* ------ Navigations ----------------*/
 
 .nav-bar {
   display: flex;
@@ -175,8 +219,6 @@ a.btn--blog {
   color: #fff;
 }
 
-.mobile__nav {
-}
 .mobile__nav li {
   padding: 1.2rem;
   text-transform: uppercase;
@@ -188,38 +230,8 @@ a.btn--blog {
   border-bottom: solid 5px #c30859;
 }
 
-.heading {
-  /* margin-left: 1rem; */
-  margin-top: 10rem;
-  padding: rem;
-  /* width: 40vw; */
-  text-transform: uppercase;
-  /* box-shadow : 10px 9px 50px 20px rgba(53, 50, 127, .3); */
-  text-align: center;
-  padding: 1em;
-  /* transform: translateY(2rem); */
-}
+/* ------ Icons ----------------*/
 
-.heading__title,
-.heading__text,
-.btn--hire {
-  margin-bottom: 2rem;
-}
-
-.heading__title {
-  text-shadow: 3px 2px 20px#000;
-}
-
-.heading__text {
-  text-shadow: 1px 2px 20px #000;
-}
-
-.btn-section {
-  position: relative;
-  border-bottom: #fff 2px solid;
-  width: 50%;
-  margin: 0 auto;
-}
 
 .social__links {
   display: flex;
@@ -236,6 +248,8 @@ a.btn--blog {
 .social__links--item:hover {
   color: #98337e;
 }
+
+/* ------ About Section ----------------*/
 
 .about__text {
   margin-left: 5rem;
@@ -305,6 +319,9 @@ a.btn--blog {
   top: 2rem;
   right: 1rem;
 }
+
+/* ------ Portfolio Section ----------------*/
+
 
 .portfolio-section {
   position: relative;
@@ -418,7 +435,7 @@ a.btn--blog {
   color: #98337e;
 }
 
-/* Grid Layout */
+/* ------ Grid Layout ----------------*/
 
 .portfolio__projects {
   display: grid;
@@ -468,6 +485,8 @@ a.btn--blog {
   grid-row: 3/4;
 }
 
+/* ------ Services Section ----------------*/
+
 .service-section {
   padding: 5rem 0;
   background: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
@@ -490,6 +509,8 @@ a.btn--blog {
   margin: 3rem 2rem;
   border-radius: 10px;
 }
+
+/* ------ Contact Section ----------------*/
 
 .contact-section {
   text-align: center;
@@ -516,6 +537,8 @@ textarea {
   text-align: left;
 }
 
+/* ------ Footer ----------------*/
+
 footer {
   background-image: linear-gradient(
       to right bottom,
@@ -531,7 +554,9 @@ footer {
   color: #fff;
 }
 
-/* Media  Queries */
+/* --------------------------------- */
+/* Media Queries  */
+/* --------------------------------- */
 
 @media (max-width: 1000px) {
   .nav-bar {
@@ -597,8 +622,7 @@ footer {
   }
 }
 
-/* Javascript Classes */
-
+/* ------ Javascript Classes ----------------*/
 .menu-open {
   display: flex;
   align-content: center;
