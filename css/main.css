@@ -1,5 +1,9 @@
 @import "../vendor/css/sanitize.css";
 
+/* --------------------------------- */
+/* Global Styles  */
+/* --------------------------------- */
+
 h1,
 h2,
 h3,
@@ -27,6 +31,8 @@ body {
   font-family: "Merriweather", serif;
 }
 
+/* ------ Headings ----------------*/
+
 header {
   background-image: linear-gradient(
       to right bottom,
@@ -36,7 +42,7 @@ header {
       rgba(195, 7, 89, 0.9)
     ),
     url("../images/hero.jpg");
-  height: 90vh;
+  height: 85%;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -68,6 +74,28 @@ header::after {
   transform: skew(0, -20deg);
   background-color: #c30759;
 }
+
+.heading__title {
+  text-shadow: 3px 2px 20px#000;
+}
+
+.heading__text {
+  text-shadow: 1px 2px 20px #000;
+}
+
+.heading {
+  /* margin-left: 1rem; */
+  margin-top: 10rem;
+  padding: rem;
+  /* width: 40vw; */
+  text-transform: uppercase;
+  /* box-shadow : 10px 9px 50px 20px rgba(53, 50, 127, .3); */
+  text-align: center;
+  padding: 1em;
+  /* transform: translateY(2rem); */
+}
+
+/* ------ Buttons ----------------*/
 
 .btn,
 .btn:visited,
@@ -120,6 +148,27 @@ a.btn--blog {
   color: #fff;
   font-weight: 400;
 }
+
+.btn-section {
+  position: relative;
+  border-bottom: #fff 2px solid;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.heading__title,
+.heading__text,
+.btn--hire {
+  margin-bottom: 2rem;
+}
+
+.project__description a.btn--project {
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  text-transform: none;
+}
+
+/* ------ Navigations ----------------*/
 
 .nav-bar {
   display: flex;
@@ -175,8 +224,6 @@ a.btn--blog {
   color: #fff;
 }
 
-.mobile__nav {
-}
 .mobile__nav li {
   padding: 1.2rem;
   text-transform: uppercase;
@@ -188,38 +235,26 @@ a.btn--blog {
   border-bottom: solid 5px #c30859;
 }
 
-.heading {
-  /* margin-left: 1rem; */
-  margin-top: 10rem;
-  padding: rem;
-  /* width: 40vw; */
-  text-transform: uppercase;
-  /* box-shadow : 10px 9px 50px 20px rgba(53, 50, 127, .3); */
-  text-align: center;
-  padding: 1em;
-  /* transform: translateY(2rem); */
+.footer-nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 1rem;
+  padding-top: 1rem;
 }
 
-.heading__title,
-.heading__text,
-.btn--hire {
-  margin-bottom: 2rem;
+.footer-nav-bar__item {
+  color: #fff;
+  padding: .7rem;
+  transition: all 0.2s;
+  border-radius: 1rem;
 }
 
-.heading__title {
-  text-shadow: 3px 2px 20px#000;
+.footer-nav-bar__item:hover {
+  background-color: #98337e;
 }
 
-.heading__text {
-  text-shadow: 1px 2px 20px #000;
-}
-
-.btn-section {
-  position: relative;
-  border-bottom: #fff 2px solid;
-  width: 50%;
-  margin: 0 auto;
-}
+/* ------ Icons ----------------*/
 
 .social__links {
   display: flex;
@@ -236,6 +271,13 @@ a.btn--blog {
 .social__links--item:hover {
   color: #98337e;
 }
+
+.service-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ------ About Section ----------------*/
 
 .about__text {
   margin-left: 5rem;
@@ -305,6 +347,8 @@ a.btn--blog {
   top: 2rem;
   right: 1rem;
 }
+
+/* ------ Portfolio Section ----------------*/
 
 .portfolio-section {
   position: relative;
@@ -384,10 +428,6 @@ a.btn--blog {
   opacity: 0.9;
 }
 
-.btn--project {
-  margin-bottom: 1rem;
-}
-
 .project__description i {
   color: #98337e;
   font-size: 1.5rem;
@@ -418,14 +458,14 @@ a.btn--blog {
   color: #98337e;
 }
 
-/* Grid Layout */
+/* ------ Grid Layout ----------------*/
 
 .portfolio__projects {
   display: grid;
 
-  grid-template-columns: 1rem 1fr 1fr 1fr 1fr 1rem;
-  grid-template-rows: 100px repeat(2, 2fr);
-  grid-gap: 2rem;
+  grid-template-columns: 1rem repeat(4, 3fr);
+  grid-template-rows: 90px repeat(2, 1fr);
+  grid-gap: 1.5rem;
 }
 
 .project-1 {
@@ -468,6 +508,8 @@ a.btn--blog {
   grid-row: 3/4;
 }
 
+/* ------ Services Section ----------------*/
+
 .service-section {
   padding: 5rem 0;
   background: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
@@ -479,8 +521,8 @@ a.btn--blog {
 .services {
   margin-top: 5rem;
   display: flex;
-  justify-content: space-around;
-  /* width: 80%; */
+  justify-content: space-between;
+  align-content: center;
   margin: 0 auto;
 }
 
@@ -491,6 +533,12 @@ a.btn--blog {
   border-radius: 10px;
 }
 
+.services__title {
+  margin: 0;
+}
+
+/* ------ Contact Section ----------------*/
+
 .contact-section {
   text-align: center;
   position: relative;
@@ -500,6 +548,7 @@ a.btn--blog {
 .contact__title {
   font-size: 2rem;
   text-align: center;
+  margin: 0;
 }
 
 .form {
@@ -516,6 +565,45 @@ textarea {
   text-align: left;
 }
 
+/* ------ Contact Section ----------------*/
+
+form {
+  position: relative;
+}
+label {
+  position: absolute;
+  color: #c30859;
+  transform-origin: top left;
+  transform: translate(0, -1.4rem) scale(1);
+  transition: all 0.1s ease-in-out;
+  z-index: -100;
+}
+
+input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: #98337e solid 2px;
+  padding: 10px;
+}
+
+input:focus + label {
+  transform: translate(0, 0.1rem) scale(0.75);
+}
+
+::placeholder {
+  color: #c30859;
+  font-family: "Merriweather", serif;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 1.5rem;
+  border: #98337e solid 1px;
+}
+
+/* ------ Footer ----------------*/
+
 footer {
   background-image: linear-gradient(
       to right bottom,
@@ -524,14 +612,20 @@ footer {
       rgba(195, 8, 89, 0.8),
       rgba(195, 7, 89, 0.9)
     ),
-    url("https://images.pexels.com/photos/48207/sunset-sky-sun-cloud-48207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    url("../images/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 30vh;
+  height: 10vh;
   color: #fff;
 }
 
-/* Media  Queries */
+.copyright {
+  text-align: center;
+}
+
+/* --------------------------------- */
+/* Media Queries  */
+/* --------------------------------- */
 
 @media (max-width: 1000px) {
   .nav-bar {
@@ -549,11 +643,113 @@ footer {
     top: 5rem;
     right: 1rem;
   }
+
+  .portfolio__projects {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 1rem;
+  }
+  .project-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .project__description--1 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .project-2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  .project__description--2 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+
+  .project-3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .project__description--3 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+
+  .project-4 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+
+  .project__description--4 {
+    grid-column: 4/5;
+    grid-row: 5/6;
+  }
+
+  .project {
+    width: 90%;
+  }
+
+  .project__description {
+    text-align: center;
+    width: 100%;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    width: 50%;
+  }
 }
 
 @media (max-width: 700px) {
   .nav-bar__item {
     display: none;
+  }
+  .portfolio__projects {
+    grid-template-columns: 100px;
+    grid-template-rows: 100px repeat(7, 1fr);
+    grid-gap: 1rem;
+  }
+  .project-1 {
+    grid-column: 2/5;
+    grid-row: 2/3;
+  }
+
+  .project__description--1 {
+    grid-column: 2/5;
+    grid-row: 3/4;
+  }
+  .project-2 {
+    grid-column: 2/5;
+    grid-row: 4/5;
+  }
+
+  .project__description--2 {
+    grid-column: 2/5;
+    grid-row: 5/6;
+  }
+
+  .project-3 {
+    grid-column: 2/5;
+    grid-row: 6/7;
+  }
+
+  .project__description--3 {
+    grid-column: 2/5;
+    grid-row: 7/8;
+  }
+
+  .project-4 {
+    grid-column: 4/5;
+    grid-row: 8/9;
+  }
+
+  .project__description--4 {
+    grid-column: 4/5;
+    grid-row: 9/10;
   }
 }
 
@@ -564,9 +760,6 @@ footer {
 }
 
 @media (max-width: 1110px) {
-  .about__right {
-    width: 65%;
-  }
   .pic--1 {
     top: 4rem;
   }
@@ -597,8 +790,22 @@ footer {
   }
 }
 
-/* Javascript Classes */
+@media (min-width: 1090px) {
+  .project__description a.btn--project {
+    padding: 7px;
+  }
+}
+@media (width: 1024px) and (height: 1366px) {
+  .project__description {
+    font-size: 1rem;
+  }
 
+  header {
+    height: 60vh;
+  }
+}
+
+/* ------ Javascript Classes ----------------*/
 .menu-open {
   display: flex;
   align-content: center;
