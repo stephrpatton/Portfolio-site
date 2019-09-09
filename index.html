@@ -30,11 +30,11 @@
     <title>Stephanie Patton | Portfolio </title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav>
         <ul class="nav-bar">
           <li>
-            <a href="" class="nav-bar__item">Home</a>
+            <a href="#home" class="nav-bar__item">Home</a>
           </li>
           <li>
             <a href="#about" class="nav-bar__item">About</a>
@@ -49,7 +49,7 @@
         <div class="mobile__nav--icon"><i class="fas fa-bars"></i></div>
         <ul class="mobile__nav">
           <li>
-            <a href="" class="mobile__nav-bar__item">Home</a>
+            <a href="#home" class="mobile__nav-bar__item">Home</a>
           </li>
           <li>
             <a href="#about" class="mobile__nav-bar__item">About</a>
@@ -58,7 +58,7 @@
             <a href="#projects" class="mobile__nav-bar__item">Projects</a>
           </li>
           <li>
-            <a href="" class="mobile__nav-bar__item">Contact</a>
+            <a href="#contact" class="mobile__nav-bar__item">Contact</a>
           </li>
           <li class="mobile__nav--icon-x">
             <i class="fas fa-times"></i>
@@ -75,7 +75,7 @@
           Full-Stack Web Developer
         </h2>
         <div class="btn-section">
-          <a href="#" class="btn btn--dark btn--hire">Hire Me</a>
+          <a href="#" class="btn btn--dark btn--hire">Contact</a>
         </div>
 
         <div class="social">
@@ -356,7 +356,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <h3 class="section__title contact__title">
           Contact Me
         </h3>
@@ -365,9 +365,10 @@
           <form action="#">
             <input type="text" class="name" />
             <label for="name" class="contact-name">Name</label>
+            <input type="text" class="phone" />
+            <label for="phone" class="contact-phone">Phone</label>
             <input type="text" class="email" />
             <label for="email" class="contact-email">Email</label>
-            <label for="service">Services:</label>
             <textarea name="" id="" placeholder="Message Here"></textarea>
           </form>
         </div>
@@ -375,13 +376,10 @@
     </main>
 
     <footer>
-      <div class="footer-download">
-        <a href="" class="btn btn--dark">Resume</a>
-      </div>
-      <div class="footer-nav">
+      <nav class="footer-nav">
         <ul class="footer-nav-bar">
           <li>
-            <a href="" class="footer-nav-bar__item">Home</a>
+            <a href="#home" class="footer-nav-bar__item">Home</a>
           </li>
           <li>
             <a href="#about" class="footer-nav-bar__item">About</a>
@@ -390,20 +388,13 @@
             <a href="#projects" class="footer-nav-bar__item">Projects</a>
           </li>
           <li>
-            <a href="" class="footer-nav-bar__item">Blog</a>
-          </li>
-          <li></li>
-          <li>
-            <a href="" class="footer-nav-bar__item">Blog</a>
-          </li>
-          <li>
-            <a href="" class="footer-nav-bar__item">Contact</a>
+            <a href="#contact" class="footer-nav-bar__item">Contact</a>
           </li>
         </ul>
-      </div>
+      </nav>
 
       <div class="copyright">
-        Copyright | Stephanie Patton
+        Copyright | Designed and Coded by Stephanie R Patton
       </div>
     </footer>
     <script type="text/javascript" src="scripts/app.js"></script>
