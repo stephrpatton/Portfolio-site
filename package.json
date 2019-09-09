@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/StephanieRP/Profile-site#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-clean-css": "^3.9.2",
     "gulp-sass": "^3.1.0",
@@ -34,7 +34,7 @@
     "webpack": "^3.11.0"
   },
   "dependencies": {
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.26.7",
     "gulp-sourcemaps": "^2.6.4",
     "live-server": "^1.2.0",
     "sanitize.styl": "0.0.0-latest"
