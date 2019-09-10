@@ -65,7 +65,6 @@ header::after {
 header::before {
   right: 20%;
   transform: skew(0, 20deg);
-  /* background-color: #98337e; */
   background-color: #c30759;
 }
 
@@ -84,15 +83,11 @@ header::after {
 }
 
 .heading {
-  /* margin-left: 1rem; */
   margin-top: 10rem;
   padding: rem;
-  /* width: 40vw; */
   text-transform: uppercase;
-  /* box-shadow : 10px 9px 50px 20px rgba(53, 50, 127, .3); */
   text-align: center;
   padding: 1em;
-  /* transform: translateY(2rem); */
 }
 
 /* ------ Buttons ----------------*/
