@@ -26,6 +26,9 @@ body,
 html {
   height: 100vh;
   overflow-x: hidden;
+}
+
+body {
   box-sizing: border-box;
   background: #fff6f3;
   line-height: 1.2;
@@ -550,6 +553,7 @@ a.btn--blog {
 .form {
   width: 50%;
   margin: 0 auto;
+  position: relative;
 }
 
 input,
@@ -560,8 +564,6 @@ textarea {
   width: 80%;
   text-align: left;
 }
-
-/* ------ Contact Section ----------------*/
 
 label {
   color: #c30859;
@@ -576,7 +578,6 @@ input {
   border: none;
   border-bottom: #98337e solid 2px;
   padding: 10px;
-  z-index: 1000;
 }
 
 input:focus + label {
