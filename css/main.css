@@ -22,7 +22,8 @@ a {
   box-sizing: inherit;
 }
 
-body {
+body,
+html {
   height: 100vh;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -240,7 +241,7 @@ a.btn--blog {
 
 .footer-nav-bar__item {
   color: #fff;
-  padding: .7rem;
+  padding: 0.7rem;
   transition: all 0.2s;
   border-radius: 1rem;
 }
@@ -562,16 +563,11 @@ textarea {
 
 /* ------ Contact Section ----------------*/
 
-form {
-  position: relative;
-}
 label {
-  position: absolute;
   color: #c30859;
   transform-origin: top left;
   transform: translate(0, -1.4rem) scale(1);
   transition: all 0.1s ease-in-out;
-  z-index: -100;
 }
 
 input {
@@ -580,6 +576,7 @@ input {
   border: none;
   border-bottom: #98337e solid 2px;
   padding: 10px;
+  z-index: 1000;
 }
 
 input:focus + label {
