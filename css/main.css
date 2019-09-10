@@ -26,6 +26,7 @@ body,
 html {
   height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -566,10 +567,14 @@ textarea {
 }
 
 label {
+  position: absolute;
   color: #c30859;
   transform-origin: top left;
   transform: translate(0, -1.4rem) scale(1);
   transition: all 0.1s ease-in-out;
+  user-select: none;
+  width: 0;
+  z-index: -100;
 }
 
 input {
