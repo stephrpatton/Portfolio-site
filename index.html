@@ -356,16 +356,19 @@
         <h3 class="section__title contact__title">
           Contact Me
         </h3>
-
+<div class="alert">
+  Your information has been sent!
+</div>
         <div class="form">
-          <form action="#">
-            <input type="text" class="name" />
+          <form action="#" id="contactForm">
+            <input type="text"  id="name" required/>
             <label for="name" class="contact-name">Name</label>
-            <input type="text" class="phone" />
+            <input type="tel" id="phone" required/>
             <label for="phone" class="contact-phone">Phone</label>
-            <input type="text" class="email" />
+            <input type="email" id="email" required/>
             <label for="email" class="contact-email">Email</label>
-            <textarea name="" id="" placeholder="Message Here"></textarea>
+            <textarea id="message" placeholder="Message Here" required></textarea>
+            <button type="submit" class="btn btn--dark">Submit</button>
           </form>
         </div>
       </section>
@@ -390,6 +393,8 @@
         Copyright | Designed and Coded by Stephanie R Patton
       </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
   </body>
 </html>

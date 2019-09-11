@@ -169,6 +169,19 @@ a.btn--blog {
   padding: 10px;
 }
 
+button {
+  outline: none;
+  border: #98337e solid 1px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 0;
+}
+
+button:hover {
+  transform: translateY(0.1rem);
+  box-shadow: 2px 2px 20px #000;
+}
+
 /* ------ Navigation ----------------*/
 
 .nav-bar {
@@ -194,6 +207,7 @@ a.btn--blog {
 .mobile__nav--icon,
 .mobile__nav {
   display: none;
+  transition: all ease-in-out 0.2s;
 }
 
 .mobile__nav--icon {
@@ -217,7 +231,7 @@ a.btn--blog {
 
 .mobile__nav {
   position: fixed;
-  background: #98337e;
+  background: #c30859;
   width: 100%;
   z-index: 300;
   padding: 0;
@@ -234,7 +248,7 @@ a.btn--blog {
 }
 
 .mobile__nav-bar__item:hover {
-  background: #c30859;
+  background: #98337e;
 }
 
 .footer-nav-bar {
@@ -260,12 +274,14 @@ a.btn--blog {
 
 .social__links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 2rem;
 }
 
 .social__links--item {
   font-size: 2.5rem;
+  padding: 5rem;
+
   color: currentColor;
 }
 
@@ -597,6 +613,15 @@ textarea {
   border: #98337e solid 1px;
 }
 
+.alert {
+  background-image: linear-gradient(#98337e, #b0216e);
+  padding: 1.5rem;
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  display: none;
+}
+
 /* ------ Footer ----------------*/
 
 footer {
@@ -767,16 +792,31 @@ footer {
   .about-section {
     padding: 7rem 0;
   }
+  .social__links {
+    justify-content: space-evenly;
+  }
+  .social__links--item {
+    padding: 0;
+  }
+
+  .alert {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 500px) {
   .mobile__nav li a {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .mobile__nav--icon-x {
     font-size: 2rem;
     top: -0.5rem;
+  }
+
+  .mobile__nav--icon {
+    font-size: 2.5rem;
   }
 
   header {
