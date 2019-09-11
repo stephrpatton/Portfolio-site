@@ -140,9 +140,9 @@ header::after {
 }
 
 .btn--light {
-  color: #98337e;
+  color: #c30859;
   font-weight: 700;
-  border-bottom: 2px solid #98337e;
+  border-bottom: 2px solid #c30859;
 }
 
 a.btn--blog {
@@ -226,7 +226,7 @@ button:hover {
   z-index: 300;
   background: #c30859;
   padding: 0 5px;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .mobile__nav--icon-x {
@@ -264,12 +264,11 @@ button:hover {
   justify-content: space-evenly;
   align-content: center;
   margin: 0.7rem;
-  padding-top: 1rem;
 }
 
 .footer-nav-bar__item {
   color: #fff;
-  padding: 0.7rem;
+  padding: 0.7rem 0;
   transition: all 0.2s;
   border-radius: 1rem;
 }
@@ -304,7 +303,7 @@ button:hover {
 
 .to-top {
   position: absolute;
-  bottom: 8rem;
+  bottom: 6rem;
   right: 1rem;
   font-size: 2rem;
   color: #c30759;
@@ -472,7 +471,7 @@ button:hover {
 }
 
 .project__description i {
-  color: #98337e;
+  color: #c30859;
   font-size: 1.5rem;
   padding: 0.3rem;
 }
@@ -497,8 +496,8 @@ button:hover {
     url("../images/project-4.jpg");
 }
 
-.color-pink {
-  color: #98337e;
+.color-red {
+  color: #c30859;
 }
 
 /* ------ Grid Layout ----------------*/
@@ -666,7 +665,7 @@ footer {
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.5rem 0;
   position: relative;
 }
 
