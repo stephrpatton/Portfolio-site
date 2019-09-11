@@ -47,6 +47,14 @@ header {
       rgba(195, 7, 89, 0.9)
     ),
     url("../images/hero.jpg");
+  -webkit-background-image: linear-gradient(
+      to right bottom,
+      rgba(210, 28, 28, 0.7),
+      rgba(209, 0, 62, 0.7),
+      rgba(195, 8, 89, 0.8),
+      rgba(195, 7, 89, 0.9)
+    ),
+    url("../images/hero.jpg");
   height: 85%;
   position: relative;
   background-size: cover;
@@ -255,7 +263,7 @@ button:hover {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  margin: .7rem;
+  margin: 0.7rem;
   padding-top: 1rem;
 }
 
@@ -305,7 +313,6 @@ button:hover {
 .to-top a {
   color: inherit;
 }
-
 
 .to-top:hover {
   color: #98337e;
@@ -451,7 +458,7 @@ button:hover {
 
 .project {
   background-color: #c30859;
-  height: 50vh;
+  height: 55vh;
   width: 30vw;
   border-radius: 10px;
   position: relative;
