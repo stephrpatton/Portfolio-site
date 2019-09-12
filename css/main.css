@@ -99,7 +99,6 @@ header::after {
 }
 
 .heading {
-  /* margin-top: 10rem; */
   padding-top: 10rem;
   text-transform: uppercase;
   text-align: center;
@@ -118,6 +117,7 @@ header::after {
 
 .btn--dark {
   background-image: linear-gradient(#98337e, #b0216e);
+  -webkit-background-image: linear-gradient(#98337e, #b0216e);
   box-shadow: 0 5px 20px 2px #000;
   color: #fff;
   transition: all 0.2s;
@@ -153,6 +153,7 @@ a.btn--blog {
 
 .btn--light:hover {
   background-image: linear-gradient(#98337e, #b0216e);
+  -webkit-background-image: linear-gradient(#98337e, #b0216e);
   box-shadow: 0 5px 20px 2px #000;
   border-radius: 10px;
   color: #fff;
@@ -313,7 +314,7 @@ button:hover {
   color: inherit;
 }
 
-.to-top:hover {
+.to-top:active {
   color: #98337e;
   transform: translateY(-1rem);
 }
@@ -333,6 +334,12 @@ button:hover {
 
 .section__title {
   background-image: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
+  -webkit-background-image: linear-gradient(
+    to right bottom,
+    #d21c1c,
+    #cf003e,
+    #c30859
+  );
   display: inline-block;
   -webkit-background-clip: text;
   font-weight: 700;
@@ -351,9 +358,6 @@ button:hover {
 
 .about__right {
   width: 40%;
-  position: relative;
-  /* transform: skew(-10deg); */
-  /* margin-right: 2rem; */
   position: relative;
 }
 
@@ -398,6 +402,13 @@ button:hover {
 .portfolio__title {
   padding: 5rem 4rem;
   background: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859),
+    url("../images/hero.jpg");
+  -webkit-background: linear-gradient(
+      to right bottom,
+      #d21c1c,
+      #cf003e,
+      #c30859
+    ),
     url("../images/hero.jpg");
   box-shadow: 0 0 4rem #000;
   color: #fff;
@@ -462,8 +473,11 @@ button:hover {
   border-radius: 10px;
   position: relative;
   background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
+  -webkit-background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
 }
 
 .project:hover {
@@ -479,20 +493,40 @@ button:hover {
 .project-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/project-1.jpg");
+  -webkit-background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/project-1.jpg");
 }
 
 .project-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/project-2.jpg");
+  -webkit-background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
     url("../images/project-2.jpg");
 }
 
 .project-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/project-3.jpg");
+  -webkit-background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/project-3.jpg");
 }
 
 .project-4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/project-4.jpg");
+  -webkit-background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
     url("../images/project-4.jpg");
 }
 
@@ -504,7 +538,6 @@ button:hover {
 
 .portfolio__projects {
   display: grid;
-
   grid-template-columns: 1rem repeat(4, 3fr) 1rem;
   grid-template-rows: 90px repeat(2, 1fr);
   grid-gap: 1.9rem;
@@ -555,6 +588,12 @@ button:hover {
 .service-section {
   padding: 5rem 0;
   background: linear-gradient(to right bottom, #d21c1c, #cf003e, #c30859);
+  -webkit-background: linear-gradient(
+    to right bottom,
+    #d21c1c,
+    #cf003e,
+    #c30859
+  );
   margin-top: 5rem;
   color: #fff;
   text-align: center;
@@ -639,6 +678,7 @@ textarea {
 
 .alert {
   background-image: linear-gradient(#98337e, #b0216e);
+  -webkit-background-image: linear-gradient(#98337e, #b0216e);
   padding: 1.5rem;
   color: #fff;
   width: 50%;
@@ -650,6 +690,14 @@ textarea {
 
 footer {
   background-image: linear-gradient(
+      to right bottom,
+      rgba(210, 28, 28, 0.5),
+      rgba(209, 0, 62, 0.5),
+      rgba(195, 8, 89, 0.8),
+      rgba(195, 7, 89, 0.9)
+    ),
+    url("../images/hero.jpg");
+  -webkit-background-image: linear-gradient(
       to right bottom,
       rgba(210, 28, 28, 0.5),
       rgba(209, 0, 62, 0.5),
