@@ -314,9 +314,9 @@ button:hover {
   color: inherit;
 }
 
-.to-top:active {
+.to-top:hover {
   color: #98337e;
-  transform: translateY(-1rem);
+  transform: translateY(-.5rem);
 }
 
 /* ------ About Section ----------------*/
