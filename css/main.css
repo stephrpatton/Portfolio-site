@@ -316,7 +316,7 @@ button:hover {
 
 .to-top:hover {
   color: #98337e;
-  transform: translateY(-.5rem);
+  transform: translateY(-0.5rem);
 }
 
 /* ------ About Section ----------------*/
@@ -894,7 +894,21 @@ footer {
   }
 
   header {
-    height: 90vh;
+    height: 85vh;
+  }
+
+  header::after,
+  header::before {
+    bottom: -0.5rem;
+  }
+
+  .portfolio__title::after,
+  .portfolio__title::before {
+    bottom: -0.3rem;
+  }
+
+  .to-top {
+    bottom: 7rem;
   }
 }
 /* ------ Javascript Classes ----------------*/
