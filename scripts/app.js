@@ -74,3 +74,28 @@ const getInputValue = id => {
 
 // event listener to submit form
 contact.addEventListener("submit", submitForm);
+
+// tab change event
+class ProjectTabFunction {
+  constructor(t) {
+    this.t = t;
+    // Click Event
+    this.t.addEventListener("click", () => this.changeTab());
+    console.log(this.t);
+  }
+
+  changeTab() {
+    const project = document.querySelectorAll(".portfolio_tabs-button");
+    Array.from(project).forEach(project => {
+      project.classList.remove("portfolio_tabs-button--active");
+    });
+
+    this.t.classList.add("portfolio_tabs-button--active");
+  }
+}
+
+let projectTab = document.querySelectorAll(".portfolio_tabs-button");
+
+projectTab.forEach(tab => {
+  return new ProjectTabFunction(tab);
+});
