@@ -77,11 +77,17 @@ contact.addEventListener("submit", submitForm);
 
 // tab change event
 class ProjectTabFunction {
-  constructor(t) {
-    this.t = t;
+  constructor(e) {
+    this.e = e;
+    this.data = this.e.dataset.tab;
+    this.tabPic = document.querySelectorAll(
+      `.project[data-tab='${this.data}']`
+    );
+    this.projectTabInfo = new ProjectTabInfo(this.tabPic);
+    console.log(this.tabPic);
+
     // Click Event
-    this.t.addEventListener("click", () => this.changeTab());
-    console.log(this.t);
+    this.e.addEventListener("click", () => this.changeTab());
   }
 
   changeTab() {
@@ -90,7 +96,22 @@ class ProjectTabFunction {
       project.classList.remove("portfolio_tabs-button--active");
     });
 
-    this.t.classList.add("portfolio_tabs-button--active");
+    this.e.classList.add("portfolio_tabs-button--active");
+    this.projectTabInfo.changeTab();
+  }
+}
+
+class ProjectTabInfo {
+  constructor(e) {
+    this.e = e;
+  }
+  changeTab() {
+    const info = document.querySelectorAll(".project");
+
+    Array.from(info).forEach(pic => {
+      pic.classList.remove("selected");
+    });
+    this.e.classList.add("selected");
   }
 }
 

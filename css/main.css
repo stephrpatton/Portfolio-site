@@ -115,6 +115,10 @@ header::after {
   text-transform: uppercase;
 }
 
+.portfolio_tabs-button {
+  padding: 0.5rem;
+}
+
 .portfolio_tabs-button:not(.portfolio_tabs-button--active) {
   color: #c30859;
   font-weight: 700;
@@ -497,6 +501,7 @@ button:hover {
   -webkit-background-position: center;
   background-repeat: no-repeat;
   -webkit-background-repeat: no-repeat;
+  display: none;
 }
 
 .project:hover {
@@ -506,13 +511,17 @@ button:hover {
 .portfolio_tabs {
   display: flex;
   justify-content: center;
-  padding: 5rem;
+  padding: 6rem;
 }
 
 .project__description i {
   color: #c30859;
   font-size: 1.5rem;
   padding: 0.3rem;
+}
+
+.selected {
+  display: block;
 }
 
 .project-1 {
