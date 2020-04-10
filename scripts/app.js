@@ -80,12 +80,12 @@ class ProjectTabFunction {
   constructor(e) {
     this.e = e;
     this.data = this.e.dataset.tab;
-    this.tabPic = document.querySelectorAll(
-      `.project[data-tab='${this.data}']`
+    this.dataSet = this.e.dataset;
+    this.tabPic = document.querySelector(`.project[data-tab='${this.data}']`);
+    this.tabPicMain = document.querySelector(
+      `.project[data-main='${this.data}']`
     );
-    this.projectTabInfo = new ProjectTabInfo(this.tabPic);
-    console.log(this.tabPic);
-
+    this.projectTabInfo = new ProjectTabInfo(this.tabPic, this.tabPicMain);
     // Click Event
     this.e.addEventListener("click", () => this.changeTab());
   }
@@ -95,23 +95,29 @@ class ProjectTabFunction {
     Array.from(project).forEach(project => {
       project.classList.remove("portfolio_tabs-button--active");
     });
-
     this.e.classList.add("portfolio_tabs-button--active");
     this.projectTabInfo.changeTab();
   }
 }
 
 class ProjectTabInfo {
-  constructor(e) {
-    this.e = e;
-  }
   changeTab() {
     const info = document.querySelectorAll(".project");
-
     Array.from(info).forEach(pic => {
-      pic.classList.remove("selected");
+      const tabs = document.querySelector(".portfolio_tabs-button--active");
+      if (pic.dataset.tab === tabs.dataset.tab) {
+        console.log(pic.dataset.tab);
+        console.log(tabs);
+        pic.classList.add("selected");
+        console.log("same");
+      } else if (tabs.dataset.main === pic.dataset.main && pic.dataset.main) {
+        console.log("not same");
+        console.log(pic.dataset.main);
+        pic.classList.add("selected");
+      } else {
+        pic.classList.remove("selected");
+      }
     });
-    this.e.classList.add("selected");
   }
 }
 

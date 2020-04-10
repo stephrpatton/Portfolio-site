@@ -490,9 +490,13 @@ button:hover {
 }
 
 .project {
+  display: none;
+}
+
+.project__image {
   background-color: #c30859;
-  height: 55vh;
-  width: 30vw;
+  height: 50vh;
+  width: 40vw;
   border-radius: 10px;
   position: relative;
   background-size: cover;
@@ -501,17 +505,28 @@ button:hover {
   -webkit-background-position: center;
   background-repeat: no-repeat;
   -webkit-background-repeat: no-repeat;
-  display: none;
 }
 
-.project:hover {
+.project__image:hover {
   opacity: 0.9;
 }
 
 .portfolio_tabs {
   display: flex;
   justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   padding: 6rem;
+}
+
+.project__description {
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project__description h4 {
+  font-weight: 800;
 }
 
 .project__description i {
@@ -521,10 +536,12 @@ button:hover {
 }
 
 .selected {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
-.project-1 {
+.project__image--1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/project-1.jpg");
   -webkit-background-image: linear-gradient(
@@ -534,7 +551,7 @@ button:hover {
     url("../images/project-1.jpg");
 }
 
-.project-2 {
+.project__image--2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/project-2.jpg");
   -webkit-background-image: linear-gradient(
@@ -544,7 +561,7 @@ button:hover {
     url("../images/project-2.jpg");
 }
 
-.project-3 {
+.project__image--3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/project-3.jpg");
   -webkit-background-image: linear-gradient(
@@ -554,7 +571,7 @@ button:hover {
     url("../images/project-3.jpg");
 }
 
-.project-4 {
+.project__image--4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/project-4.jpg");
   -webkit-background-image: linear-gradient(
@@ -566,55 +583,40 @@ button:hover {
 
 .color-red {
   color: #c30859;
+  font-weight: 700;
 }
 
 /* ------ Grid Layout ----------------*/
 
 .portfolio__projects {
   display: grid;
-  grid-template-columns: 1rem repeat(4, 3fr) 1rem;
+  grid-template-columns: 2rem repeat(2, 45%);
   grid-template-rows: 1fr;
-  grid-gap: 1.9rem;
+  grid-gap: 2rem;
 }
 
-.project-1 {
-  grid-column: 2/2;
-  grid-row: 2/3;
-}
-
-.project__description--1 {
-  grid-column: 3/4;
-  grid-row: 2/3;
+.project-1,
+.project-5,
+.project-6,
+.project-7,
+.project-8 {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 .project-2 {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-
-.project__description--2 {
-  grid-column: 5/6;
-  grid-row: 2/3;
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
 .project-3 {
   grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-.project__description--3 {
-  grid-column: 3/4;
-  grid-row: 3/4;
+  grid-row: 2/3;
 }
 
 .project-4 {
-  grid-column: 4/5;
-  grid-row: 3/4;
-}
-
-.project__description--4 {
-  grid-column: 5/6;
-  grid-row: 3/4;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 /* ------ Services Section ----------------*/
@@ -762,9 +764,8 @@ footer {
 /* --------------------------------- */
 
 @media (max-width: 1000px) {
+  /* tablet */
   .nav-bar {
-    /* tablet */
-
     justify-content: space-around;
   }
   .btn-section {
@@ -787,32 +788,34 @@ footer {
 }
 
 @media (max-width: 1300px) {
-  .project {
-    /* tablet*/
+  /* tablet*/
 
-    width: 80%;
-    margin: 0 auto;
+  .selected {
+    display: block;
+    width: 90%;
+  }
+
+  .project__image {
+    width: 100%;
   }
 
   .project__description {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.5rem;
+    width: 100%;
+
+    font-size: 1.2rem;
   }
 
   .portfolio__projects {
-    grid-template-columns: 1rem repeat(2, 1fr) 1rem;
+    grid-template-columns: 5rem 1fr 5rem;
     grid-gap: 1rem;
   }
-  .project-1 {
+  .project-1,
+  .project-5,
+  .project-6,
+  .project-7,
+  .project-8 {
     grid-column: 2/4;
     grid-row: 2/3;
-  }
-
-  .project__description--1 {
-    grid-column: 2/4;
-    grid-row: 3/4;
   }
 
   .project-2 {
@@ -820,29 +823,14 @@ footer {
     grid-row: 4/5;
   }
 
-  .project__description--2 {
-    grid-column: 2/4;
-    grid-row: 5/6;
-  }
-
   .project-3 {
     grid-column: 2/4;
     grid-row: 6/7;
   }
 
-  .project__description--3 {
-    grid-column: 2/4;
-    grid-row: 7/8;
-  }
-
   .project-4 {
     grid-column: 2/4;
     grid-row: 8/9;
-  }
-
-  .project__description--4 {
-    grid-column: 2/4;
-    grid-row: 9/10;
   }
 
   .portfolio-section::before,
